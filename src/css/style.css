@@ -1,5 +1,19 @@
-/* Delete this and fix navbar icon sizes */
-img {
-  width: 50px;
-
+img[navbar-logo-container]{
+  width: 100px;
+}
+img[navbar-side-icon]{
+  width: 100px;
+}
+#logo-login-signup{
+  margin-left: 7.5vw;
+  width: 35vw;
+}
+#text-login-signup{
+  text-align: center;
+  margin-left: 7.5vw;
+  width: 35vw;
+}
+#formContainer{
+  margin-left: 7.5vw;
+  width: 35vw;
 }

@@ -11,7 +11,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/63357932a6.js" crossorigin="anonymous"></script>
-  <title>Log In to Arrow</title>
+  <title>Arrow | Log In</title>
 </head>
 
 <body>
@@ -19,8 +19,8 @@
   <nav class="navbar navbar-expand-* navbar-dark bg-dark sticky-top">
     <div class="container-fluid">
 
-      <!-- TODO: .navbar-light .navbar-toggler-icon{
-                background-image: url(https://i.stack.imgur.com/mSXoO.png)!important;
+      <!-- TODO: .navbar-dark .navbar-toggler-icon{
+                background-image: url(img/)!important;
                 } -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
         <span class="navbar-toggler-icon"></span>
@@ -75,20 +75,58 @@
         <a class="navbar-brand" href="#"><img src="img/full-logo.svg" alt="ARROW LOGO"></a>
       </div>
       <div class="navbar-side-container">
-        <a href="navbar-brand" href="view-stocks.html"><img src="img/view-stocks.svg" alt="VIEW STOCKS"></a>
-        <a href="navbar-brand" onclick="logout();" href="#"><img src="img/logout.svg" alt="LOGOUT"></a>
+        <a href="view-stocks.html"><img src="img/view-stocks.svg" alt="VIEW STOCKS"></a>
+        <a onclick="logout();" href="#"><img src="img/logout.svg" alt="LOGOUT"></a>
       </div>
     </div>
   </nav>
   <!-- Implement Marquee Effect -->
-  <section class="jumbotron">
-    <div class="container-fluid">
-      <marquee behavior="scroll" direction="left" bgcolor="#00E3C9">Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Tenetur consequatur dolorem facere, neque molestiae natus? Accusantium, maxime
-        consequatur quae similique perspiciatis excepturi facilis iste quaerat veritatis exercitationem, vitae, labore
-        laudantium.</marquee>
+  <div class="row">
+    <div class="col-12">
+      <p class="lead">
+        <marquee behavior="scroll" direction="left" bgcolor="#00E3C9">Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Tenetur consequatur dolorem facere, neque molestiae natus? Accusantium, maxime
+          consequatur quae similique perspiciatis excepturi facilis iste quaerat veritatis exercitationem, vitae, labore
+          laudantium.
+        </marquee>
+      </p>
     </div>
-  </section>
+  </div>
+  <!-- Two Column / Log In Form Section -->
+  <div class="container-fluid padding">
+    <div class="row padding">
+      <div class="col-md-6">
+        <img id="logo-login-signup" src="img/a-logo.svg" alt="Arrow Logo">
+      </div>
+      <div class="col-md-6">
+        <strong>
+          <h1 id="text-login-signup">Log In</h1>
+        </strong>
+        <br>
+        <div id="formContainer">
+          <!-- Add Form Action -->
+          <form action="">
+            <form>
+              <div class="form-group">
+                <label for="loginUsername">Username</label>
+                <input type="text" class="form-control" id="loginUsername" placeholder="Enter the username">
+              </div>
+              <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" class="form-control" id="loginPassword" placeholder="Enter the password">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <br>
+            <a class="text-secondary" href="signup.html"><em>Don't have an account?</em></a>
+            <br>
+            <button type="link" class="btn btn-secondary">Sign Up</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
   <!--Bootstrap Script-->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
