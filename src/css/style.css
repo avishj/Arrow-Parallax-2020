@@ -1,3 +1,6 @@
+.navbar-light .navbar-toggler-icon{
+  background-image: url(img/navbar-toggler.svg)!important;
+}
 img[navbar-logo-container]{
   width: 100px;
 }
