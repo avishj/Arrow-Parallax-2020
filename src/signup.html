@@ -15,84 +15,66 @@
   <title>Arrow | Sign Up</title>
 </head>
 
-<body>
+<body style="background-color: #404040">
   <!-- Navbar Section -->
-  <nav class="navbar navbar-expand-* navbar-dark bg-dark sticky-top">
-    <div class="container-fluid">
-
-      <!-- TODO: .navbar-light .navbar-toggler-icon{
-              background-image: url(https://i.stack.imgur.com/mSXoO.png)!important;
-              } -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav mr-auto">
+  <nav class="navbar navbar-expand-* navbar-light bg-light sticky-top navbar-custom"
+    style="border-radius: 30px; margin: 1% 4% 1% 4%;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Fix Logo and Other Icons Sizing -->
+    <div class="mx-auto">
+      <a class="navbar-brand" href="#"><img class="img-fluid" src="img/full-logo.svg" alt="ARROW LOGO"
+          style="min-width: 50px;"></a>
+    </div>
+    <div class="navbar-side-container">
+      <a href="profile.html"><img class="img-fluid" attribute="navbar-side-icon" src="img/profile.svg"
+          alt="MY PROFILE"></a>
+      <a onclick="logout();" href="#"><img attribute="navbar-side-icon" src="img/logout.svg" alt="LOGOUT"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav mr-auto" style="margin-left: 4%">
+        <li class="nav-item">
+          <a class="nav-link" href="invest.html" style="color: #00E3C9"><strong>Investments</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="track.html" style="color: #00E3C9"><strong>Track Expenditure</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="learn.html" style="color: #00E3C9"><strong>Learn Stock Exchange</strong></a>
+        </li>
+      </ul>
+      <br>
+      <div id="navContactUs">
+        <ul class="navbar-nav mr-auto" style="margin-left: 4%">
           <li class="nav-item">
-            <a class="nav-link" href="profile.html">My Profile</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="view-stocks.html">View Stocks</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="my-investments.html">My Investments</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="add-investments.html">Add Investments</a>
+            <a class="nav-link" href="contactus.html" style="color: #00E3C9"><strong>Contact Us</strong></a>
           </li>
         </ul>
-        <br><br>
-        <div id="navContactUs">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="contactus.html">Contact Us</a>
-            </li>
-          </ul>
-          <hr>
-        </div>
-        <!-- TODO: Add display:inline & Change Size of Social Media Icons -->
-        <div id="navSocialMediaIcons">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a href="https://instagram.com/arrow_stock">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="https://twitter.com/arrow_stock">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="https://facebook.com/arrow_stock">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <br>
       </div>
-      <!-- Fix Logo and Other Icons Sizing -->
-      <div class="navbar-logo-container">
-        <a class="navbar-brand" href="#"><img src="img/full-logo.svg" alt="ARROW LOGO"></a>
-      </div>
-      <div class="navbar-side-container">
-        <a href="view-stocks.html"><img src="img/view-stocks.svg" alt="VIEW STOCKS"></a>
-        <a onclick="logout();" href="#"><img src="img/logout.svg" alt="LOGOUT"></a>
+      <!-- TODO: Add display:inline -->
+      <div id="navSocialMediaIcons" style="display: inline;">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+            <a href="https://instagram.com/arrow_stock">
+              <i class="fab fa-instagram fa-2x" style="color: #00E3C9"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/arrow_stock">
+              <i class="fab fa-twitter fa-2x" style="color: #00E3C9"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://facebook.com/arrow_stock">
+              <i class="fab fa-facebook-f fa-2x" style="color: #00E3C9"></i>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
-  <!-- Implement Marquee Effect -->
-  <div class="row">
-    <div class="col-12">
-      <p class="lead">
-        <marquee behavior="scroll" direction="left" bgcolor="#00E3C9">Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Tenetur consequatur dolorem facere, neque molestiae natus? Accusantium, maxime
-          consequatur quae similique perspiciatis excepturi facilis iste quaerat veritatis exercitationem, vitae, labore
-          laudantium.
-        </marquee>
-      </p>
-    </div>
-  </div>
   <!-- Two Column / Log In Form Section -->
   <div class="container-fluid padding">
     <div class="row padding">
@@ -101,36 +83,50 @@
       </div>
       <div class="col-md-6">
         <strong>
-          <h1 id="text-login-signup">Log In</h1>
+          <h1 id="text-login-signup" class="display-4" style="color: #00E3C9">Sign Up</h1>
         </strong>
-        <br>
         <div id="formContainer">
           <!-- Add Form Action -->
-          <form action="">
-            <form>
-              <div class="form-group">
-                <label for="signupEmail">Email</label>
-                <input type="email" class="form-control" id="loginUsername" placeholder="Enter your email">
-              </div>
-              <div class="form-group">
-                <label for="loginUsername">Username</label>
-                <input type="text" class="form-control" id="loginUsername" placeholder="Enter the username">
-              </div>
-              <div class="form-group">
-                <label for="loginUsername">Username</label>
-                <input type="text" class="form-control" id="loginUsername" placeholder="Enter the username">
-              </div>
-              <div class="form-group">
-                <label for="loginPassword">Password</label>
-                <input type="password" class="form-control" id="loginPassword" placeholder="Enter the password">
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-            <br>
-            <a class="text-secondary" href="signup.html"><em>Don't have an account?</em></a>
-            <br>
-            <button type="link" class="btn btn-secondary">Sign Up</button>
+          <form>
+            <div class="form-group">
+              <label for="signupEmail" class="display-7" style="color: #00E3C9">Email</label>
+              <input type="email" class="form-control" id="signupEmail" placeholder="Enter your email"
+                style="border-radius: 30px">
+            </div>
+            <div class="form-group">
+              <label for="signupName" class="display-7" style="color: #00E3C9">Name</label>
+              <input type="text" class="form-control" id="signupName" placeholder="Enter your name"
+                style="border-radius: 30px">
+            </div>
+            <div class="form-group">
+              <label for="signupUsername" class="display-7" style="color: #00E3C9">Username</label>
+              <input type="text" class="form-control" id="signupUsername" placeholder="Create a username"
+                style="border-radius: 30px">
+            </div>
+            <div class="form-group">
+              <label for="signupPassword" class="display-7" style="color: #00E3C9">Password</label>
+              <input type="password" class="form-control" id="signupPassword" placeholder="Create a password"
+                style="border-radius: 30px">
+            </div>
+            <div class="form-group" class="display-7" style="color: #00E3C9">
+              <label for="signupPAN">PAN</label>
+              <input type="text" class="form-control" id="signupPAN" placeholder="Enter your PAN"
+                style="border-radius: 30px">
+            </div>
+            <div class="btn-container-center">
+              <button onclick="form_submit()" type="submit" class="btn btn-primary"
+                style="color: #f0f0f0; border-radius: 30px; background-color: #00E3C9;">Submit</button>
+            </div>
           </form>
+          <br>
+          <div class="btn-container-center">
+            <a class="text-secondary" href="login.html"><em>Log In Instead?</em></a>
+          </div>
+          <div class="btn-container-center">
+            <button href="login.html" type="link" class="btn btn-secondary"
+              style="margin-top: 0.6rem; color: #f0f0f0; border-radius: 30px; background-color: #00E3C9">Log
+              In</button>
+          </div>
         </div>
 
       </div>
