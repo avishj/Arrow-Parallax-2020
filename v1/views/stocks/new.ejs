@@ -1,0 +1,23 @@
+<%- include('../partials/header') -%>
+
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<div class="container">
+    <div class="row">
+<h1 style="text-align:center;">New Stocks</h1>
+<div style="width:30%; margin: 25px auto;">
+<form action="/stocks" method="POST">
+    <div class="form-group"><input type="text" class="form-control" name="name" placeholder="name"></div>
+    
+    <div class="form-group"> <input type="text" name="image" class="form-control" placeholder="image url"></div>
+    <div class="form-group" >
+        <input type="text" class="form-control" name="description" placeholder="description">
+    </div>
+   <div class="form-group"><button class="btn btn-lg btn-primary btn-block">Submit</button>  </div>
+   <a href="/stocks">Go back</a>
+</div>
+    
+</form>
+</div>  
+</div>
+</body>
+</html>

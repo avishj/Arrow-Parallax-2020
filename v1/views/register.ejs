@@ -1,0 +1,156 @@
+<!-- <%- include('./partials/header')%>
+<h1>sign up</h1>
+<form action="/register" method="POST">
+    <input type="text" name="username" placeholder="username">
+    <input type="password" name="password" placeholder="password">
+    <button>Sign up</button>
+
+
+</form> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Bootstrap CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/63357932a6.js" crossorigin="anonymous"></script>
+  <title>Arrow | Sign Up</title>
+</head>
+
+<body style="background-color: #404040">
+  <!-- Navbar Section -->
+  <nav class="navbar navbar-expand-* navbar-light bg-light sticky-top navbar-custom"
+    style="border-radius: 30px; margin: 1% 4% 1% 4%;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Fix Logo and Other Icons Sizing -->
+    <div class="mx-auto">
+      <a class="navbar-brand" href="#"><img class="img-fluid" src="img/full-logo.svg" alt="ARROW LOGO"
+          style="min-width: 50px;"></a>
+    </div>
+    <div class="navbar-side-container">
+      <a href="profile.html"><img class="img-fluid" attribute="navbar-side-icon" src="img/profile.svg"
+          alt="MY PROFILE"></a>
+      <a onclick="logout();" href="#"><img attribute="navbar-side-icon" src="img/logout.svg" alt="LOGOUT"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav mr-auto" style="margin-left: 4%">
+        <li class="nav-item">
+          <a class="nav-link" href="invest.html" style="color: #00E3C9"><strong>Investments</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="track.html" style="color: #00E3C9"><strong>Track Expenditure</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="learn.html" style="color: #00E3C9"><strong>Learn Stock Exchange</strong></a>
+        </li>
+      </ul>
+      <br>
+      <div id="navContactUs">
+        <ul class="navbar-nav mr-auto" style="margin-left: 4%">
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html" style="color: #00E3C9"><strong>Contact Us</strong></a>
+          </li>
+        </ul>
+        <br>
+      </div>
+      <!-- TODO: Add display:inline -->
+      <div id="navSocialMediaIcons" style="display: inline;">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+            <a href="https://instagram.com/arrow_stock">
+              <i class="fab fa-instagram fa-2x" style="color: #00E3C9"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/arrow_stock">
+              <i class="fab fa-twitter fa-2x" style="color: #00E3C9"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://facebook.com/arrow_stock">
+              <i class="fab fa-facebook-f fa-2x" style="color: #00E3C9"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Two Column / Log In Form Section -->
+  <div class="container-fluid padding">
+    <div class="row padding">
+      <div class="col-md-6">
+        <img id="logo-login-signup" src="img/a-logo.svg" alt="Arrow Logo">
+      </div>
+      <div class="col-md-6">
+        <strong>
+          <h1 id="text-login-signup" class="display-4" style="color: #00E3C9">Sign Up</h1>
+        </strong>
+        <div id="formContainer">
+          <!-- Add Form Action -->
+          <form>
+            <div class="form-group">
+              <label for="signupEmail" class="display-7" style="color: #00E3C9">Email</label>
+              <input type="email" class="form-control" id="signupEmail" placeholder="Enter your email"
+                style="border-radius: 30px">
+            </div>
+            <div class="form-group">
+              <label for="signupName" class="display-7" style="color: #00E3C9">Name</label>
+              <input type="text" class="form-control" id="signupName" placeholder="Enter your name"
+                style="border-radius: 30px">
+            </div>
+            <div class="form-group">
+              <label for="signupUsername" class="display-7" style="color: #00E3C9">Username</label>
+              <input type="text" class="form-control" id="signupUsername" placeholder="Create a username"
+                style="border-radius: 30px">
+            </div>
+            <div class="form-group">
+              <label for="signupPassword" class="display-7" style="color: #00E3C9">Password</label>
+              <input type="password" class="form-control" id="signupPassword" placeholder="Create a password"
+                style="border-radius: 30px">
+            </div>
+            <div class="form-group" class="display-7" style="color: #00E3C9">
+              <label for="signupPAN">PAN</label>
+              <input type="text" class="form-control" id="signupPAN" placeholder="Enter your PAN"
+                style="border-radius: 30px">
+            </div>
+            <div class="btn-container-center">
+              <button onclick="form_submit()" type="submit" class="btn btn-primary"
+                style="color: #f0f0f0; border-radius: 30px; background-color: #00E3C9;">Submit</button>
+            </div>
+          </form>
+          <br>
+          <div class="btn-container-center">
+            <a class="text-secondary" href="login.html"><em>Log In Instead?</em></a>
+          </div>
+          <div class="btn-container-center">
+            <button href="login.html" type="link" class="btn btn-secondary"
+              style="margin-top: 0.6rem; color: #f0f0f0; border-radius: 30px; background-color: #00E3C9">Log
+              In</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!--Bootstrap Script-->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+img[navbar-logo-container]{
+  width: 100px;
+}
+img[navbar-side-icon]{
+  width: 100px;
+}
+#logo-login-signup{
+  margin-left: 7.5vw;
+  width: 35vw;
+}
+#text-login-signup{
+  text-align: center;
+  margin-left: 7.5vw;
+  width: 35vw;
+}
+#formContainer{
+  margin-left: 7.5vw;
+  width: 35vw;
+}
+
+#x{
+    font-size:12px;
+}

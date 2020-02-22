@@ -1,0 +1,20 @@
+{
+  "name": "html5-marquee",
+  "version": "0.2.0",
+  "authors": [
+    "muchweb <aleks@s-ko.net>"
+  ],
+  "license": "GPL-3.0+",
+  "ignore": [
+    "/node_modules",
+    "/bower_components",
+    "npm-debug.log"
+  ],
+  "homepage": "http://html5marquee.com/",
+  "description": "HTML5 marquee tag implementation in pure CSS3",
+  "keywords": [
+    "html5",
+    "marquee"
+  ],
+  "main": "css/marquee.css"
+}

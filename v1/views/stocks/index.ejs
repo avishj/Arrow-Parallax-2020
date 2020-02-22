@@ -1,0 +1,38 @@
+ <%- include('../partials/header') -%>
+ 
+
+<div class="container">
+<header class="jumbotron">
+    <!-- <link href="bootstrap.c ss"> -->
+    <h1>Welcome to Arrow!</h1>
+    <p> Best Stocks for you!! </p>
+    <p>
+        <a class="btn btn-primary btn-large" href="/stocks/new">Buy New stock</a>
+    </p>
+</header>
+<!-- <style>
+    .img{
+            height: 200px;
+            width: 100px;
+       
+    }
+</style> -->
+<div class="row" style="display:flex; flex-wrap: wrap;">
+    <% stocks.forEach(function(stock){ %>
+        <div class="col-md-3 col-sm-6" >
+            <div class="thumbnail">
+                <div class="caption text-center">
+           <h4><%= stock.name %></h4>
+        </div>
+           <img src="<%= stock.image %>" class="img"> 
+        </div>
+        <p>
+            <a href="/stocks/<%= stock._id%>" class="btn btn-primary">More Info</a>
+        </p>
+        </div>
+      
+    <% }) %>
+    </div>  
+</div> 
+</body>
+</html>
