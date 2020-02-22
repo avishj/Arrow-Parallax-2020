@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/63357932a6.js" crossorigin="anonymous"></script>
+  <title>Arrow | Track Expenditures</title>
+</head>
+
+<body style="background-color: #404040">
+  <!-- Navbar Section -->
+  <nav class="navbar navbar-expand-* navbar-light bg-light sticky-top navbar-custom"
+    style="border-radius: 30px; margin: 1% 4% 1% 4%;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Fix Logo and Other Icons Sizing -->
+    <div class="mx-auto">
+      <a class="navbar-brand" href="#"><img class="img-fluid" src="img/full-logo.svg" alt="ARROW LOGO"
+          style="min-width: 50px;"></a>
+    </div>
+    <div class="navbar-side-container">
+      <a href="profile.html"><img class="img-fluid" attribute="navbar-side-icon" src="img/profile.svg"
+          alt="MY PROFILE"></a>
+      <a onclick="logout();" href="logout.html"><img attribute="navbar-side-icon" src="img/logout.svg" alt="LOGOUT"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav mr-auto" style="margin-left: 4%">
+        <li class="nav-item">
+          <a class="nav-link" href="invest.html" style="color: #00E3C9"><strong>Investments</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="track.html" style="color: #00E3C9"><strong>Track Expenditure</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="learn.html" style="color: #00E3C9"><strong>Learn Stock Exchange</strong></a>
+        </li>
+      </ul>
+      <br>
+      <div id="navContactUs">
+        <ul class="navbar-nav mr-auto" style="margin-left: 4%">
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html" style="color: #00E3C9"><strong>Contact Us</strong></a>
+          </li>
+        </ul>
+        <br>
+      </div>
+      <!-- TODO: Add display:inline -->
+      <div id="navSocialMediaIcons" style="display: inline;">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+            <a href="https://instagram.com/arrow_stock">
+              <i class="fab fa-instagram fa-2x" style="color: #00E3C9"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/arrow_stock">
+              <i class="fab fa-twitter fa-2x" style="color: #00E3C9"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://facebook.com/arrow_stock">
+              <i class="fab fa-facebook-f fa-2x" style="color: #00E3C9"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Expenditure Title -->
+  <br>
+  <div class="container-fluid padding" style="margin-left: 2%">
+    <div class="rows">
+      <div class="col-12">
+        <h2 class="display-3" style="color:#00E3C9"><strong>Tell us about your Expenditure</strong></h2>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <!-- Expenditure Details -->
+
+  <div class="container-fluid padding" style="margin-left: 2%">
+    <div class="row padding">
+      <div class="col-md-6">
+        <form action="">
+          <div class="form-group">
+            <label for="trackSavings" class="display-7" style="color: #00E3C9"><strong>Your Monthly
+                Savings</strong></label>
+            <input type="number" class="form-control" id="trackSavings" placeholder="Your Monthly Savings"
+              style="border-radius: 30px">
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="trackIncome" class="display-7" style="color: #00E3C9"><strong>Your Annual
+                Income</strong></label>
+            <input type="number" class="form-control" id="trackIncome" placeholder="Your Annual Income"
+              style="border-radius: 30px">
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="trackTime" class="display-7" style="color: #00E3C9"><strong>How long do you want to invest
+                for?</strong></label>
+            <input type="email" class="form-control" id="trackTime" placeholder="How long do you want to invest for?"
+              style="border-radius: 30px">
+          </div>
+          <br>
+          <div class="btn-container-center">
+            <button onclick="form_submit()" type="submit" class="btn btn-lg btn-primary"
+              style="color: #f0f0f0; border-radius: 30px; background-color: #00E3C9;">Predict Income</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-md-6">
+        <img src="img/cash.svg" alt="CASH">
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap Script -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
