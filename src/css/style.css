@@ -21,3 +21,8 @@
 .navbar-custom{
   background-color: white;
 }
+.btn-container-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
