@@ -1,11 +1,8 @@
-.navbar-light .navbar-toggler-icon{
+/* .navbar-light .navbar-toggler-icon{
   background-image: url(img/navbar-toggler.svg)!important;
-}
-img[navbar-logo-container]{
-  width: 100px;
-}
-img[navbar-side-icon]{
-  width: 100px;
+} */
+* {
+  font-family: 'Muli';
 }
 #logo-login-signup{
   margin-left: 7.5vw;
@@ -19,4 +16,8 @@ img[navbar-side-icon]{
 #formContainer{
   margin-left: 7.5vw;
   width: 35vw;
+}
+
+.navbar-custom{
+  background-color: white;
 }

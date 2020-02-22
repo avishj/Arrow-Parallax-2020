@@ -9,107 +9,173 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/63357932a6.js" crossorigin="anonymous"></script>
   <!-- TODO: Complete the title -->
-  <title>Arrow | Welcome to</title>
+  <title>Arrow | Home</title>
 </head>
 
-<body>
+<body style="background-color: #404040">
   <!-- Navbar Section -->
-  <nav class="navbar navbar-expand-* navbar-light bg-light sticky-top">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav mr-auto">
+  <nav class="navbar navbar-expand-* navbar-light bg-light sticky-top navbar-custom"
+    style="border-radius: 30px; margin: 1% 4% 1% 4%;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Fix Logo and Other Icons Sizing -->
+
+    <div class="mx-auto">
+      <a class="navbar-brand" href="#"><img class="img-fluid" src="img/full-logo.svg" alt="ARROW LOGO"
+          style="min-width: 50px;"></a>
+    </div>
+    <div class="navbar-side-container">
+      <a href="profile.html"><img class="img-fluid" attribute="navbar-side-icon" src="img/profile.svg"
+          alt="MY PROFILE"></a>
+      <a onclick="logout();" href="#"><img attribute="navbar-side-icon" src="img/logout.svg" alt="LOGOUT"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav mr-auto" style="margin-left: 4%">
+        <li class="nav-item">
+          <a class="nav-link" href="invest.html">Make Investments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="track.html">Track Expenditure</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="learn.html">Learn Stock Exchange</a>
+        </li>
+      </ul>
+      <br>
+      <div id="navContactUs">
+        <ul class="navbar-nav mr-auto" style="margin-left: 4%">
           <li class="nav-item">
-            <a class="nav-link" href="invest.html">Make Investments</a>
+            <a class="nav-link" href="contactus.html">Contact Us</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="track.html">Track Expenditure</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="learn.html">Learn Stock Exchange</a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="add-investments.html">Add Investments</a>
-          </li> -->
         </ul>
-        <br><br>
-        <div id="navContactUs">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="contactus.html">Contact Us</a>
-            </li>
-          </ul>
-          <hr>
-        </div>
-        <!-- TODO: Add display:inline & Change Size of Social Media Icons -->
-        <div id="navSocialMediaIcons">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a href="https://instagram.com/arrow_stock">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="https://twitter.com/arrow_stock">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="https://facebook.com/arrow_stock">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <hr width="90px" style="float: left;"><br>
       </div>
-      <!-- Fix Logo and Other Icons Sizing -->
-      <div class="navbar-logo-container">
-        <a class="navbar-brand" href="#"><img attribute="navbar-main-logo" src="img/full-logo.svg" alt="ARROW LOGO"></a>
-      </div>
-      <div class="navbar-side-container">
-        <a href="view-stocks.html"><img attribute="navbar-side-icon" src="img/view-stocks.svg" alt="VIEW STOCKS"></a>
-        <a onclick="logout();" href="#"><img attribute="navbar-side-icon" src="img/logout.svg" alt="LOGOUT"></a>
+      <!-- TODO: Add display:inline & Change Size of Social Media Icons -->
+      <div id="navSocialMediaIcons" style="display: inline">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+            <a href="https://instagram.com/arrow_stock">
+              <i class="fab fa-instagram fa-2x" style="color: #00E3C9"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/arrow_stock">
+              <i class="fab fa-twitter fa-2x" style="color: #00E3C9"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://facebook.com/arrow_stock">
+              <i class="fab fa-facebook-f fa-2x" style="color: #00E3C9"></i>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
+
+
   </nav>
 
-  <!-- Welcome & Carousel Section -->
+  <!-- Welcome Section -->
 
-  <div class="container-fluid">
-
+  <div class="container-fluid padding">
+    <div class="row welcome">
+      <div class="col-12">
+        <h1 class="display-4" style="margin-left: 4%; color: #00E3C9;">
+          <strong>Welcome to Arrow.</strong>
+        </h1>
+      </div>
+      <div class="col-12">
+        <img src="img/dots-up.svg" alt="DOTS SYMBOL" style="margin-left: 4%">
+      </div>
+    </div>
   </div>
 
+  <!-- Carousel Section -->
 
-
-
-
-
-
-
-
-
-
-
-  <!-- Implement Marquee Effect -->
-  <!-- <div class="row">
-    <div class="col-12">
-      <p class="lead">
-        <marquee behavior="scroll" direction="left" bgcolor="#00E3C9">Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Tenetur consequatur dolorem facere, neque molestiae natus? Accusantium, maxime
-          consequatur quae similique perspiciatis excepturi facilis iste quaerat veritatis exercitationem, vitae, labore
-          laudantium.
-        </marquee>
-      </p>
+  <div id="slides" class="carousel slide" data-ride="carousel"
+    style="margin: 1.75% 4% 1.75% 4%;max-height: 550px;overflow: hidden;border-radius: 30px;">
+    <ul class="carousel-indicators">
+      <li data-target="#slides" data-slide-to="0" class="active"></li>
+      <li data-target="#slides" data-slide-to="1"></li>
+      <li data-target="#slides" data-slide-to="2"></li>
+      <li data-target="#slides" data-slide-to="3"></li>
+      <li data-target="#slides" data-slide-to="4"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/carousel0.jpg" alt="CAROUSEL IMAGE 0">
+      </div>
+      <div class="carousel-item">
+        <img src="img/carousel1.jpg" alt="CAROUSEL IMAGE 1">
+      </div>
+      <div class="carousel-item">
+        <img src="img/carousel2.jpg" alt="CAROUSEL IMAGE 2">
+      </div>
+      <div class="carousel-item">
+        <img src="img/carousel3.jpg" alt="CAROUSEL IMAGE 3">
+      </div>
+      <div class="carousel-item">
+        <img src="img/carousel4.jpg" alt="CAROUSEL IMAGE 4">
+      </div>
     </div>
-  </div> -->
-  <!-- What is Arrow Section -->
-  <section>
-  </section>
+  </div>
+
+  <!-- 2nd Welcome & Investment Section -->
+
+  <div class="container-fluid padding">
+    <div class="row welcome">
+      <div class="col-12">
+        <img src="img/dots-down.svg" alt="DOTS SYMBOL" style="margin-right: 4%; margin-right: 4%; float: right;">
+      </div>
+      <div class="col-12">
+        <h1 class="display-5" style="margin-left: 4%; color: #00E3C9;">
+          <strong>Welcome!</strong>
+        </h1>
+      </div>
+      <div class="col-12">
+        <h4 class="display-6" style="margin-left: 4%; color: #00E3C9;">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum rerum laborum reprehenderit incidunt corrupti
+          est enim suscipit cumque optio a, sed minus et sit ipsam. Nisi quas ratione neque sapiente!
+        </h4>
+      </div>
+      <div class="col-12" style="margin: 2% 4% 0% 4%;">
+        <img src="img/investment.svg" alt="INVESTMENT">
+      </div>
+    </div>
+  </div>
+
+  <!-- Services & Clock -->
+
+  <div class="container-fluid padding">
+    <div class="row">
+      <div class="col-md-8">
+        <hr width="100px" color=#00E3C9;><br>
+        <h1 class="display-5" style="margin-left: 6%; color :#00E3C9;"><strong>Our Services</strong></h1>
+        <h4 class="display-6" style="margin-left: 6%; color: #00E3C9;">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum rerum laborum reprehenderit incidunt corrupti
+          est enim suscipit cumque optio a, sed minus et sit ipsam. Nisi quas ratione neque sapiente!
+        </h4>
+        <br>
+        <button href="signup.html" type="button" class="btn btn-outline-info btn-group-lg"
+          style="margin-left:6%;color: #00E3C9;">
+          Get Started
+        </button>
+      </div>
+      <div class="col-md-4">
+        <img src="img/clock.svg" alt="CLOCK">
+      </div>
+    </div>
+  </div>
+
+  <!-- Jumbotron Footer -->
+
+
 
   <!-- Bootstrap Script -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

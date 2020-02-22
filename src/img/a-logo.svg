@@ -29,18 +29,20 @@
       <feComposite in="SourceGraphic"/>
     </filter>
   </defs>
-  <g id="Group_34" data-name="Group 34" transform="translate(-100 -128)">
+  <g id="Group_53" data-name="Group 53" transform="translate(-100 -128)">
     <g transform="matrix(1, 0, 0, 1, 100, 128)" filter="url(#Ellipse_9)">
       <circle id="Ellipse_9-2" data-name="Ellipse 9" cx="274.5" cy="274.5" r="274.5" transform="translate(26 25)" fill="#404040"/>
     </g>
     <g transform="matrix(1, 0, 0, 1, 100, 128)" filter="url(#Ellipse_10)">
-      <circle id="Ellipse_10-2" data-name="Ellipse 10" cx="274.5" cy="274.5" r="274.5" transform="translate(25 25)" fill="#404040"/>
+      <circle id="Ellipse_10-2" data-name="Ellipse 10" cx="274.5" cy="274.5" r="274.5" transform="translate(25 25)" fill="#e5e5e5"/>
     </g>
-    <g transform="matrix(1, 0, 0, 1, 100, 128)" filter="url(#Path_73)">
-      <path id="Path_73-2" data-name="Path 73" d="M1348.363,1337.122H1192.385v-66.577h62.584l-87.937-229.975-87.938,229.975h62.618v66.577H985.7L1130.1,952.1H1204Z" transform="translate(-866.7 -884.1)" fill="#00e3c9"/>
-    </g>
-    <g transform="matrix(1, 0, 0, 1, 100, 128)" filter="url(#Path_74)">
-      <path id="Path_74-2" data-name="Path 74" d="M1348.363,1337.122H1192.385v-66.577h62.584l-87.937-229.975-87.938,229.975h62.618v66.577H985.7L1130.1,952.1H1204Z" transform="translate(-866.7 -884.1)" fill="#00e3c9"/>
+    <g id="Logo" transform="translate(-766.7 -756.1)">
+      <g transform="matrix(1, 0, 0, 1, 866.7, 884.1)" filter="url(#Path_73)">
+        <path id="Path_73-2" data-name="Path 73" d="M1348.363,1337.122H1192.385v-66.577h62.584l-87.937-229.975-87.938,229.975h62.618v66.577H985.7L1130.1,952.1H1204Z" transform="translate(-866.7 -884.1)" fill="#00e3c9"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 866.7, 884.1)" filter="url(#Path_74)">
+        <path id="Path_74-2" data-name="Path 74" d="M1348.363,1337.122H1192.385v-66.577h62.584l-87.937-229.975-87.938,229.975h62.618v66.577H985.7L1130.1,952.1H1204Z" transform="translate(-866.7 -884.1)" fill="#00e3c9"/>
+      </g>
     </g>
   </g>
 </svg>
