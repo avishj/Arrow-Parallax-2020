@@ -16,82 +16,75 @@
 
 <body>
   <!-- Navbar Section -->
-  <nav class="navbar navbar-expand-* navbar-dark bg-dark sticky-top">
-    <div class="container-fluid">
-
-      <!-- TODO: .navbar-light .navbar-toggler-icon{
-              background-image: url(https://i.stack.imgur.com/mSXoO.png)!important;
-              } -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav mr-auto">
+  <nav class="navbar navbar-expand-* navbar-light bg-light sticky-top navbar-custom"
+    style="border-radius: 30px; margin: 1% 4% 1% 4%;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Fix Logo and Other Icons Sizing -->
+    <div class="mx-auto">
+      <a class="navbar-brand" href="#"><img class="img-fluid" src="img/full-logo.svg" alt="ARROW LOGO"
+          style="min-width: 50px;"></a>
+    </div>
+    <div class="navbar-side-container">
+      <a href="profile.html"><img class="img-fluid" attribute="navbar-side-icon" src="img/profile.svg"
+          alt="MY PROFILE"></a>
+      <a onclick="logout();" href="#"><img attribute="navbar-side-icon" src="img/logout.svg" alt="LOGOUT"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav mr-auto" style="margin-left: 4%">
+        <li class="nav-item">
+          <a class="nav-link" href="invest.html" style="color: #00E3C9"><strong>Investments</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="track.html" style="color: #00E3C9"><strong>Track Expenditure</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="learn.html" style="color: #00E3C9"><strong>Learn Stock Exchange</strong></a>
+        </li>
+      </ul>
+      <br>
+      <div id="navContactUs">
+        <ul class="navbar-nav mr-auto" style="margin-left: 4%">
           <li class="nav-item">
-            <a class="nav-link" href="profile.html">My Profile</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="view-stocks.html">View Stocks</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="my-investments.html">My Investments</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="add-investments.html">Add Investments</a>
+            <a class="nav-link" href="contactus.html" style="color: #00E3C9"><strong>Contact Us</strong></a>
           </li>
         </ul>
-        <br><br>
-        <div id="navContactUs">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="contactus.html">Contact Us</a>
-            </li>
-          </ul>
-          <hr>
-        </div>
-        <!-- TODO: Add display:inline & Change Size of Social Media Icons -->
-        <div id="navSocialMediaIcons">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a href="https://instagram.com/arrow_stock">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="https://twitter.com/arrow_stock">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="https://facebook.com/arrow_stock">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <br>
       </div>
-      <!-- Fix Logo and Other Icons Sizing -->
-      <div class="navbar-logo-container">
-        <a class="navbar-brand" href="#"><img src="img/full-logo.svg" alt="ARROW LOGO"></a>
-      </div>
-      <div class="navbar-side-container">
-        <a href="view-stocks.html"><img src="img/view-stocks.svg" alt="VIEW STOCKS"></a>
-        <a onclick="logout();" href="#"><img src="img/logout.svg" alt="LOGOUT"></a>
+      <!-- TODO: Add display:inline -->
+      <div id="navSocialMediaIcons" style="display: inline;">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+            <a href="https://instagram.com/arrow_stock">
+              <i class="fab fa-instagram fa-2x" style="color: #00E3C9"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/arrow_stock">
+              <i class="fab fa-twitter fa-2x" style="color: #00E3C9"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://facebook.com/arrow_stock">
+              <i class="fab fa-facebook-f fa-2x" style="color: #00E3C9"></i>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
-  <!-- Implement Marquee Effect -->
-  <div class="row">
-    <div class="col-12">
-      <p class="lead">
-        <marquee behavior="scroll" direction="left" bgcolor="#00E3C9">Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Tenetur consequatur dolorem facere, neque molestiae natus? Accusantium, maxime
-          consequatur quae similique perspiciatis excepturi facilis iste quaerat veritatis exercitationem, vitae, labore
-          laudantium.
-        </marquee>
-      </p>
+
+  <!-- Contact Us -->
+
+  <div class="container-fluid padding">
+    <div class="rows">
+      <div class="col-12">
+        <h1 class="display-4" style=""><strong>Contact Us</strong></h1>
+      </div>
     </div>
   </div>
+
   <!--Bootstrap Script-->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
