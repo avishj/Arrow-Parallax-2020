@@ -9,7 +9,7 @@
   "author": "Shivam",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^3.0.1",
+    "ejs": "^3.1.10",
     "express": "^4.19.2",
     "express-session": "^1.17.0",
     "html5-marquee": "^0.2.0",
